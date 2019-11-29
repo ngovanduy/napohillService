@@ -1,0 +1,31 @@
+group 'com.sun.practice'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+buildscript {
+    ext {
+        springBootVersion = '2.0.8.RELEASE'
+    }
+}
+
+task('hello') {
+    doLast {
+        println "hello"
+    }
+    print("sadfsdfsds")
+    
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+    mavenLocal()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}

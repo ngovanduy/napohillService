@@ -1,0 +1,5 @@
+rootProject.name = 'napohill'
+include 'napo-core'
+include 'napo-batch'
+include 'napo-web'
+
